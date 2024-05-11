@@ -3,10 +3,12 @@
 import 'package:flutter/material.dart';
 
 extension context on BuildContext {
+  //! Color
+  Color get color => Theme.of(this).primaryColor;
+  Color get colorAccent => Theme.of(this).colorScheme.secondary;
   //! Size
   double get height => MediaQuery.of(this).size.height;
   double get width => MediaQuery.of(this).size.width;
-
 
   //! Navigation
   Future<dynamic> pushName(String routeName, {Object? arguments}) {
