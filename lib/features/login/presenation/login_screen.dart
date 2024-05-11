@@ -4,12 +4,11 @@ import 'package:symphony_app/core/common/animations/animate_do.dart';
 import 'package:symphony_app/core/common/widgets/app_default_button.dart';
 import 'package:symphony_app/core/common/widgets/default_icon_container.dart';
 import 'package:symphony_app/core/common/widgets/default_text_form_feild.dart';
-import 'package:symphony_app/core/styles/colors/app_color.dart';
-import 'package:symphony_app/core/styles/fonts/font_family_helper.dart';
-import 'package:symphony_app/core/styles/fonts/font_weight_helper.dart';
-import 'package:symphony_app/core/styles/images/app_image.dart';
+import 'package:symphony_app/core/extension/context_extension.dart';
+import 'package:symphony_app/core/routes/app_route.dart';
 import 'package:symphony_app/core/utils/spacing.dart';
 
+import '../../../core/common/widgets/app_text_default_button.dart';
 import '../../../core/common/widgets/default_show_dialog_app.dart';
 import 'widgets/image_container.dart';
 import 'widgets/login_text_widget.dart';
@@ -87,7 +86,16 @@ class LoginScreen extends StatelessWidget {
                         },
                         title: 'Login',
                       ),
-                    )
+                    ),
+                    Center(
+                      child: AppDefaultTextButton(
+                        onPressed: () {
+                          context.pushName(AppRoutes.signupScreen);
+                        },
+                        title: "Don't  have  an account ?",
+                        size: 14,
+                      ),
+                    ),
                   ],
                 ),
               ),

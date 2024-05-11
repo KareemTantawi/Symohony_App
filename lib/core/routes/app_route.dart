@@ -40,7 +40,7 @@ class AppRoutes {
         );
       case signupScreen:
         return BaseRoute(
-          page: const SignupScreen(),
+          page: SignupScreen(),
         );
       default:
         return BaseRoute(

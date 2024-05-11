@@ -8,9 +8,11 @@ class AppDefaultTextButton extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.title,
+    this.size = 24,
   });
   final void Function()? onPressed;
   final String title;
+  final double size;
   @override
   Widget build(BuildContext context) {
     return TextButton(
@@ -19,7 +21,7 @@ class AppDefaultTextButton extends StatelessWidget {
         title,
         style: TextStyle(
           color: AppColors.primaryColor.withOpacity(0.7),
-          fontSize: 24.sp,
+          fontSize: size.sp,
           fontFamily: FontFamilyHelper.fontFamily,
         ),
       ),
