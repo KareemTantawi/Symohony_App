@@ -15,7 +15,7 @@ class LoginTextWidget extends StatelessWidget {
       'Login',
       style: TextStyle(
         fontSize: 32.sp,
-        fontFamily: FontFamilyHelper.fontFamily,
+        fontFamily: FontFamilyHelper.fontFamily1,
         color: AppColors.primaryColor,
         fontWeight: FontWeightHelper.semiBold,
       ),

@@ -28,7 +28,7 @@ Future<dynamic> defaultShowDialogApp(BuildContext context) {
               style: TextStyle(
                 color: AppColors.alertDialogColor,
                 fontSize: 26.sp,
-                fontFamily: FontFamilyHelper.fontFamily,
+                fontFamily: FontFamilyHelper.fontFamily1,
                 fontWeight: FontWeightHelper.semiBold,
               ),
             ),

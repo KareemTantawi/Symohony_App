@@ -40,7 +40,7 @@ class AppDefaultButton extends StatelessWidget {
             style: TextStyle(
               color: Colors.white,
               fontSize: 28.sp,
-              fontFamily: FontFamilyHelper.fontFamily,
+              fontFamily: FontFamilyHelper.fontFamily1,
               fontWeight: FontWeightHelper.regular,
             ),
           ),

@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:symphony_app/core/common/widgets/app_default_button.dart';
 import 'package:symphony_app/core/common/widgets/app_text_default_button.dart';
 import 'package:symphony_app/core/common/widgets/default_icon_container.dart';
+import 'package:symphony_app/core/extension/context_extension.dart';
+import 'package:symphony_app/core/routes/app_route.dart';
 import 'package:symphony_app/core/utils/spacing.dart';
 
 import '../../../core/common/animations/animate_do.dart';
@@ -47,7 +49,7 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                   verticalSpace(26),
-                  CustomFadeInLeft(
+                  CustomFadeInRight(
                     duration: 600,
                     child: Row(
                       children: [
@@ -85,7 +87,7 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                   verticalSpace(26),
-                  CustomFadeInLeft(
+                  CustomFadeInRight(
                     duration: 600,
                     child: Row(
                       children: [
@@ -125,13 +127,20 @@ class SignupScreen extends StatelessWidget {
                     ),
                   ),
                   verticalSpace(26),
-                  AppDefaultButton(
-                    onTap: () {},
-                    title: 'Sign Up',
+                  CustomFadeInDown(
+                    duration: 600,
+                    child: AppDefaultButton(
+                      onTap: () {
+                        context.pushAndRemoveUntil(AppRoutes.homeScreen);
+                      },
+                      title: 'Sign Up',
+                    ),
                   ),
                   AppDefaultTextButton(
                     size: 14,
-                    onPressed: () {},
+                    onPressed: () {
+                      context.pushName(AppRoutes.loginScreen);
+                    },
                     title: 'ِAlready have  an account ?',
                   ),
                 ],

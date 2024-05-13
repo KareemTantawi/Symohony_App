@@ -14,7 +14,7 @@ class SecondryText extends StatelessWidget {
       style: TextStyle(
         fontSize: 12.sp,
         fontWeight: FontWeightHelper.regular,
-        fontFamily: FontFamilyHelper.fontFamily,
+        fontFamily: FontFamilyHelper.fontFamily1,
         color: AppColors.primaryColor.withOpacity(0.4),
       ),
     );

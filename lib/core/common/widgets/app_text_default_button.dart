@@ -22,7 +22,7 @@ class AppDefaultTextButton extends StatelessWidget {
         style: TextStyle(
           color: AppColors.primaryColor.withOpacity(0.7),
           fontSize: size.sp,
-          fontFamily: FontFamilyHelper.fontFamily,
+          fontFamily: FontFamilyHelper.fontFamily1,
         ),
       ),
     );

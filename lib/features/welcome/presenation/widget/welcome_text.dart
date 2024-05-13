@@ -12,7 +12,7 @@ class WelcomeText extends StatelessWidget {
       'Welcome To Symphony ',
       style: TextStyle(
         fontSize: 20.sp,
-        fontFamily: FontFamilyHelper.fontFamily,
+        fontFamily: FontFamilyHelper.fontFamily1,
         color: AppColors.primaryColor,
       ),
     );

@@ -18,6 +18,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:symphony_app/core/routes/base_routes.dart';
+import 'package:symphony_app/features/home/presenation/home_screen.dart';
 import 'package:symphony_app/features/login/presenation/login_screen.dart';
 import 'package:symphony_app/features/signup/presenation/signup_screen.dart';
 import 'package:symphony_app/features/welcome/presenation/welcome_screen.dart';
@@ -26,6 +27,7 @@ class AppRoutes {
   static const String welcomeScreen = 'Welcome_Screen';
   static const String loginScreen = 'Login_Screen';
   static const String signupScreen = 'Signup_Screen';
+  static const String homeScreen = 'Home_Screen';
   static Route<void> onGenerateRoute(RouteSettings settings) {
     // ignore: unused_local_variable
     final argc = settings.arguments;
@@ -41,6 +43,10 @@ class AppRoutes {
       case signupScreen:
         return BaseRoute(
           page: SignupScreen(),
+        );
+      case homeScreen:
+        return BaseRoute(
+          page: HomeScreen(),
         );
       default:
         return BaseRoute(

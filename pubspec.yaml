@@ -36,6 +36,9 @@ flutter:
         - asset: assets/fonts/Lemonada/Lemonada-Light.ttf
         - asset: assets/fonts/Lemonada/Lemonada-Regular.ttf
         - asset: assets/fonts/Lemonada/Lemonada-SemiBold.ttf
+    - family: Nizar Cocon Kurdish Bold
+      fonts:
+        - asset: assets/fonts/Lemonada/Nizar Cocon Kurdish Bold.otf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

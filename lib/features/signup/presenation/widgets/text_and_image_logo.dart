@@ -25,7 +25,7 @@ class TextAndImageLogo extends StatelessWidget {
               color: AppColors.primaryColor,
               fontSize: 34.sp,
               fontWeight: FontWeightHelper.semiBold,
-              fontFamily: FontFamilyHelper.fontFamily,
+              fontFamily: FontFamilyHelper.fontFamily1,
             ),
           ),
         ),

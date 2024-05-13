@@ -34,7 +34,7 @@ class ImageContainer extends StatelessWidget {
             'S y m p h o n y',
             style: TextStyle(
               fontSize: 30.sp,
-              fontFamily: FontFamilyHelper.fontFamily,
+              fontFamily: FontFamilyHelper.fontFamily1,
               color: AppColors.primaryColor,
               fontWeight: FontWeightHelper.semiBold,
             ),
